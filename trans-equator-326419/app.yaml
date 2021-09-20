@@ -7,6 +7,11 @@ handlers:
   static_files: www/index.html
   upload: www/index.html
 
+- url: /stylesheets
+  static_files: www/stylesheets/style.css
+  upload: www/stylesheets/style.css
+
+
 - url: /(.*)
   static_files: www/\1
   upload: www/(.*)
