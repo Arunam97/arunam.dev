@@ -1,5 +1,6 @@
 h1,
-h2 {
-    border: solid blue;
+h2,
+h3 {
+    border: solid green;
     text-align: center;
 }
