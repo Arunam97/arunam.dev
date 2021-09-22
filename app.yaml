@@ -7,11 +7,11 @@ handlers:
   static_files: src/index.html
   upload: src/index.html
 
-- url: /stylesheets
-  static_dir: src/stylesheets
+- url: /styles
+  static_dir: src/styles
 
-- url: /js
-  static_dir: src/js
+- url: /scripts
+  static_dir: src/scripts
 
 - url: /images
   static_dir: src/images
