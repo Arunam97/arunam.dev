@@ -9,9 +9,41 @@
 </head>
 
 <body>
-    <h1>ARUNAM GUPTA, Programmer</h1>
-    <h2>Website Under Construction</h2>
-    <h3>Code: 8</h3>
+    <div id="page">
+        <div id="index" class="page_item">
+            <div id="toc">
+                <h1>Table of Content</h1>
+                <button id="aboutme_btn" class="index_btn" onclick="openSection('aboutme')">About Me</button>
+                <button id="education_btn" class="index_btn" onclick="openSection('education')">Education</button>
+                <button id="skills_btn" class="index_btn" onclick="openSection('skills')">Skills</button>
+                <button id="projects_btn" class="index_btn" onclick="openSection('projects')">Projects</button>
+            </div>
+        </div>
+        <div id="body" class="page_item">
+            <div id="matter">
+                <div id="aboutme_body" class="inner_body">
+                    <h2>About Me</h2>
+                    <p>My name is Arunam Gupta and I am a senior Computer Science student at University of Maryland, College Park.</p>
+                </div>
+                <div id="education_body" class="inner_body">
+                    <h2>Education</h2>
+                    <p>University of Maryland, College Park, MD<br>Bachelor of Science, Computer Science<br>Anticipated: May 2022
+                    </p>
+                </div>
+                <div id="skills_body" class="inner_body">
+                    <h2>Skills</h2>
+                </div>
+                <div id="projects_body" class="inner_body">
+                    <h2>Projects</h2>
+                </div>
+                <script>
+                    document.getElementById("education_body").style.display = "none";
+                    document.getElementById("skills_body").style.display = "none";
+                    document.getElementById("projects_body").style.display = "none";
+                </script>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
