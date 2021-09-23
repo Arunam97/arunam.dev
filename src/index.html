@@ -12,8 +12,11 @@
     <div id="page">
         <div id="index" class="page_item">
             <div id="toc">
-                <h1>Table of Content</h1>
+                <h2>Table of Content</h2>
                 <button id="aboutme_btn" class="index_btn" onclick="openSection('aboutme')">About Me</button>
+                <script>
+                    document.getElementById("aboutme_btn").style.fontSize = "25px";
+                </script>
                 <button id="education_btn" class="index_btn" onclick="openSection('education')">Education</button>
                 <button id="skills_btn" class="index_btn" onclick="openSection('skills')">Skills</button>
                 <button id="projects_btn" class="index_btn" onclick="openSection('projects')">Projects</button>
@@ -22,8 +25,8 @@
         <div id="body" class="page_item">
             <div id="matter">
                 <div id="aboutme_body" class="inner_body">
-                    <h2>About Me</h2>
-                    <p>My name is Arunam Gupta and I am a senior Computer Science student at University of Maryland, College Park.</p>
+                    <h2>Arunam Gupta</h2>
+                    <p>arunamgupta97@gmail.com</p>
                 </div>
                 <div id="education_body" class="inner_body">
                     <h2>Education</h2>
@@ -40,7 +43,6 @@
                     document.getElementById("education_body").style.display = "none";
                     document.getElementById("skills_body").style.display = "none";
                     document.getElementById("projects_body").style.display = "none";
-                    document.getElementById("aboutme_btn").style.fontSize = "25px";
                 </script>
             </div>
         </div>

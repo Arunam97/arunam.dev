@@ -5,26 +5,20 @@
 
 html {
     animation-name: fullPage;
-    animation-duration: 90s;
+    animation-duration: 30s;
     animation-iteration-count: infinite;
     height: 100vh;
 }
 
 @keyframes fullPage {
     0% {
-        background-color: lightpink;
-    }
-    25% {
         background-color: lightblue;
     }
     50% {
-        background-color: lightskyblue;
-    }
-    75% {
         background-color: lightgreen;
     }
     100% {
-        background-color: lightpink;
+        background-color: lightblue;
     }
 }
 
@@ -50,10 +44,6 @@ html {
     border-bottom: black solid thin;
 }
 
-.index_btn:hover {
-    font-size: 25px;
-}
-
 #aboutme_btn {
     border-top: black solid thin;
     margin-top: 10%;
@@ -70,7 +60,7 @@ html {
     margin: 5%;
 }
 
-#matter h2 {
+h2 {
     font-size: 30px;
     text-align: center;
     font-weight: 600;
@@ -79,12 +69,15 @@ html {
 #matter p {
     font-size: 20px;
     margin-top: 3%;
-    text-align: left;
 }
 
 h1 {
     font-size: 30px;
     font-weight: 600;
+}
+
+#aboutme_body p {
+    text-align: center;
 }
 
 #education_body p {
