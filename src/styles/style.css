@@ -5,7 +5,7 @@
 
 html {
     animation-name: fullPage;
-    animation-duration: 20s;
+    animation-duration: 90s;
     animation-iteration-count: infinite;
     height: 100vh;
 }
@@ -14,17 +14,14 @@ html {
     0% {
         background-color: lightpink;
     }
-    20% {
+    25% {
         background-color: lightblue;
     }
-    40% {
+    50% {
         background-color: lightskyblue;
     }
-    60% {
+    75% {
         background-color: lightgreen;
-    }
-    80% {
-        background-color: lightseagreen;
     }
     100% {
         background-color: lightpink;
@@ -46,6 +43,7 @@ html {
 }
 
 .index_btn {
+    font-size: 15px;
     padding: 10%;
     background-color: transparent;
     border: none;
@@ -53,7 +51,7 @@ html {
 }
 
 .index_btn:hover {
-    font-size: large;
+    font-size: 25px;
 }
 
 #aboutme_btn {
@@ -73,11 +71,13 @@ html {
 }
 
 #matter h2 {
+    font-size: 30px;
     text-align: center;
     font-weight: 600;
 }
 
 #matter p {
+    font-size: 20px;
     margin-top: 3%;
     text-align: left;
 }
