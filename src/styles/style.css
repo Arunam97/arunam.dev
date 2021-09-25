@@ -3,97 +3,29 @@
     margin: 0;
 }
 
-html {
-    animation-name: fullPage;
-    animation-duration: 30s;
-    animation-iteration-count: infinite;
-    height: 100vh;
+#nav-bar-flex {
+    position: fixed;
+    width: 100vw;
+    height: 6vw;
+    display: flex;
 }
 
-@keyframes fullPage {
-    0% {
-        background-color: lightblue;
-    }
-    50% {
-        background-color: lightgreen;
-    }
-    100% {
-        background-color: lightblue;
-    }
+#nav-bar-flex p {
+    font-size: 3vw;
+    height: 6vw;
+    flex-grow: 2;
+    margin-left: 10vw;
 }
 
-#page {
-    display: grid;
-    grid-template-columns: 20% 80%;
+#nav-bar-flex button {
+    height: 6vw;
+    flex-grow: 1;
 }
 
-#toc {
-    margin-top: 10vh;
-    margin-left: 10%;
-    display: grid;
-    text-align: center;
-    border: black solid medium;
+#portfolio {
+    margin-right: 10vw;
 }
 
-.index_btn {
-    font-size: 15px;
-    padding: 10%;
-    background-color: transparent;
-    border: none;
-    border-bottom: black solid thin;
-}
-
-#aboutme_btn {
-    border-top: black solid thin;
-    margin-top: 10%;
-}
-
-#matter {
-    border: black solid medium;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-top: 10vh;
-}
-
-.inner_body {
-    margin: 5%;
-}
-
-h2 {
-    font-size: 30px;
-    text-align: center;
-    font-weight: 600;
-}
-
-#matter p {
-    font-size: 20px;
-    margin-top: 3%;
-}
-
-h1 {
-    font-size: 30px;
-    font-weight: 600;
-}
-
-#aboutme_body {
-    text-align: center;
-}
-
-#aboutme_body img {
-    margin-top: 3%;
-    width: 100%;
-    border-radius: 50%;
-}
-
-#aboutme_grid {
-    display: grid;
-    grid-template-columns: 75% 25%;
-}
-
-#aboutme_grid_item_1 {
-    text-align: left;
-}
-
-#education_body p {
-    text-align: center;
+#sector-1 {
+    padding-top: 6vw;
 }
