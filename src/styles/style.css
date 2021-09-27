@@ -3,22 +3,24 @@
     margin: 0;
 }
 
+body {
+    height: 200vh;
+}
+
 #nav-bar-flex {
+    height: 9vw;
     position: fixed;
     width: 100vw;
-    height: 6vw;
     display: flex;
 }
 
 #nav-bar-flex p {
-    font-size: 3vw;
-    height: 6vw;
+    font-size: 5vw;
     flex-grow: 2;
-    margin-left: 10vw;
+    margin-left: 5vw;
 }
 
 #nav-bar-flex button {
-    height: 6vw;
     flex-grow: 1;
 }
 
@@ -27,5 +29,35 @@
 }
 
 #sector-1 {
-    padding-top: 6vw;
+    padding-top: 9vw;
+}
+
+@media screen and (min-width: 600px) {
+    #portfolio {
+        margin-right: 15vw;
+    }
+    #nav-bar-flex p {
+        margin-left: 15vw;
+    }
+    #nav-bar-flex {
+        height: 6vw;
+    }
+    #sector-1 {
+        padding-top: 6vw;
+    }
+    #nav-bar-flex p {
+        font-size: 3vw;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    #nav-bar-flex {
+        height: 5vw;
+    }
+    #sector-1 {
+        padding-top: 5vw;
+    }
+    #nav-bar-flex p {
+        font-size: 2vw;
+    }
 }
