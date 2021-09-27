@@ -12,7 +12,7 @@ body {
 }
 
 #nav-bar-flex {
-    height: 9vw;
+    height: 11vw;
     position: fixed;
     width: 100vw;
     display: flex;
@@ -20,7 +20,7 @@ body {
 
 #nav-bar-flex p {
     padding-top: 1vh;
-    font-size: 5vw;
+    font-size: 6vw;
     flex-grow: 2;
     margin-left: 5vw;
 }
@@ -34,7 +34,7 @@ body {
 }
 
 #sector-1 {
-    padding-top: 9vw;
+    padding-top: 11vw;
 }
 
 @media screen and (min-width: 600px) {
@@ -61,8 +61,5 @@ body {
     }
     #sector-1 {
         padding-top: 5vw;
-    }
-    #nav-bar-flex p {
-        font-size: 2vw;
     }
 }
