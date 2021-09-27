@@ -7,6 +7,10 @@ body {
     height: 200vh;
 }
 
+body {
+    background-color: antiquewhite;
+}
+
 #nav-bar-flex {
     height: 9vw;
     position: fixed;
@@ -15,6 +19,7 @@ body {
 }
 
 #nav-bar-flex p {
+    padding-top: 1vh;
     font-size: 5vw;
     flex-grow: 2;
     margin-left: 5vw;
