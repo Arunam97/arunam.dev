@@ -3,14 +3,6 @@
     margin: 0;
 }
 
-body {
-    height: 200vh;
-}
-
-body {
-    background-color: antiquewhite;
-}
-
 #nav-bar-flex {
     height: 11vw;
     position: fixed;
@@ -26,11 +18,18 @@ body {
 }
 
 #nav-bar-flex button {
+    background-color: white;
+    border: solid black 0.1vw;
     flex-grow: 1;
 }
 
+#nav-bar-flex button:hover {
+    background-color: black;
+    color: white;
+}
+
 #portfolio {
-    margin-right: 10vw;
+    margin-right: 5vw;
 }
 
 #sector-1 {
