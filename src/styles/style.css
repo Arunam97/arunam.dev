@@ -3,62 +3,6 @@
     margin: 0;
 }
 
-#nav-bar-flex {
-    height: 11vw;
-    position: fixed;
-    width: 100vw;
-    display: flex;
-}
-
-#nav-bar-flex p {
-    padding-top: 1vh;
-    font-size: 6vw;
-    flex-grow: 2;
-    margin-left: 5vw;
-}
-
-#nav-bar-flex button {
-    background-color: white;
-    border: solid black 0.1vw;
-    flex-grow: 1;
-}
-
-#nav-bar-flex button:hover {
-    background-color: black;
-    color: white;
-}
-
-#portfolio {
-    margin-right: 5vw;
-}
-
-#sector-1 {
-    padding-top: 11vw;
-}
-
-@media screen and (min-width: 600px) {
-    #portfolio {
-        margin-right: 15vw;
-    }
-    #nav-bar-flex p {
-        margin-left: 15vw;
-    }
-    #nav-bar-flex {
-        height: 6vw;
-    }
-    #sector-1 {
-        padding-top: 6vw;
-    }
-    #nav-bar-flex p {
-        font-size: 3vw;
-    }
-}
-
-@media screen and (min-width: 900px) {
-    #nav-bar-flex {
-        height: 5vw;
-    }
-    #sector-1 {
-        padding-top: 5vw;
-    }
+#about-me .first-line {
+    display: inline-block;
 }
