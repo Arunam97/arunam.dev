@@ -1,4 +1,5 @@
 function start() {
+    document.getElementById('about-me-section').style.display = "block";
     document.getElementById('education-section').style.display = "none";
     document.getElementById('skills-section').style.display = "none";
     document.getElementById('portfolio-section').style.display = "none";
