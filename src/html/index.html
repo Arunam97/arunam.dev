@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html id='html-div'>
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,80 +9,82 @@
     <script type="text/javascript" src="/src/scripts/script.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
 </head>
 
 <body onload="start()">
-    <h1 id="header">Arunam Gupta</h1>
-    <div id="nav-bar">
-        <nav id="top-buttons">
-            <button onclick="buttonClick('about-me')" id="about-me-button">About Me</button>
-            <button onclick="buttonClick('education')" id="education-button">Education</button>
-            <button onclick="buttonClick('skills')" id="skills-button">Skills</button>
-            <button onclick="buttonClick('portfolio')" id="portfolio-button">Portfolio</button>
-            <button onclick="buttonClick('contact-me')" id="contact-me-button">Contact Me</button>
-        </nav>
-    </div>
-    <div id="sections">
-        <div id="about-me-section">
-            <h2>About me</h2>
-            <div id="about-me-body">
-                <p>Hi! My name is Arunam Gupta</p>
-                <p>I am currently a senior Computer Science student at University of Maryland, College Park graduating in May 2022.</p>
-                <p>My speciality is building clean, efficient, and scalable solutions for anyone who needs them. I have spent a long time teaching myself many different technologies and am able to build both the front-end and the back-end of any product.
-                    I am hard working and commited to any job that I do.</p>
-            </div>
+    <div id="body-div">
+        <h1 id="header">Arunam Gupta</h1>
+        <div id="nav-bar">
+            <nav id="top-buttons">
+                <button onclick="buttonClick('about-me')" class="nav-buttons" id="about-me-button">About Me</button>
+                <button onclick="buttonClick('education')" class="nav-buttons" id="education-button">Education</button>
+                <button onclick="buttonClick('skills')" class="nav-buttons" id="skills-button">Skills</button>
+                <button onclick="buttonClick('portfolio')" class="nav-buttons" id="portfolio-button">Portfolio</button>
+                <button onclick="buttonClick('contact-me')" class="nav-buttons" id="contact-me-button">Contact Me</button>
+            </nav>
         </div>
-        <div id="education-section">
-            <h2>Education</h2>
-            <div id="education-body">
-                <p>University of Maryland, College Park, MD</p>
-                <p>Bachelor of Science in Computer Science</p>
-                <p>Expected Graduation: May 2022</p>
+        <div id="sections">
+            <div id="about-me-section">
+                <h2>About me</h2>
+                <div id="about-me-body">
+                    <p>Hi! My name is Arunam Gupta</p>
+                    <p>I am currently a senior Computer Science student at University of Maryland, College Park graduating in May 2022.</p>
+                    <p>My speciality is building clean, efficient, and scalable solutions for anyone who needs them. I have spent a long time teaching myself many different technologies and am able to build both the front-end and the back-end of any product.
+                        I am hard working and commited to any job that I do.</p>
+                </div>
+                <p class="smaller-text-1">If you would like to talk to me about any employment opportunity please go to my contact me page.</p>
             </div>
-        </div>
-        <div id="skills-section">
-            <h2>Skills</h2>
-            <div id="skills-body">
-                <div id="front-end">
-                    <h3>Front-End</h3>
-                    <div>
-                        <p>HTML5</p>
-                        <p>CSS3</p>
-                        <p>JavaScript</p>
-                    </div>
-                </div>
-                <div id="back-end">
-                    <h3>Back-End</h3>
-                    <div id="items">
-                        <p>Python</p>
-                        <p>MariaDB</p>
-                    </div>
-                </div>
-                <div id="technologies">
-                    <h3>Technologies</h3>
-                    <div>
-                        <p>Google Cloud</p>
-                        <p>Git Version Control</p>
-                        <p>Ubuntu</p>
-                        <p>Windows</p>
-                    </div>
+            <div id="education-section">
+                <h2>Education</h2>
+                <div id="education-body">
+                    <p>University of Maryland, College Park, MD</p>
+                    <p>Bachelor of Science in Computer Science</p>
+                    <p class="smaller-text-1">Expected Graduation: May 2022</p>
                 </div>
             </div>
-        </div>
-        <div id="portfolio-section">
-            <h2>Portfolio</h2>
-            <div id="portfolio-body">
-                <p>3 real life projects under construction.</p>
-                <p></p>Next update on 31st October.</p>
+            <div id="skills-section">
+                <h2>Skills</h2>
+                <div id="skills-body">
+                    <div id="front-end">
+                        <h3>Front-End</h3>
+                        <div>
+                            <p>HTML5</p>
+                            <p>CSS3</p>
+                            <p>JavaScript</p>
+                        </div>
+                    </div>
+                    <div id="back-end">
+                        <h3>Back-End</h3>
+                        <div id="items">
+                            <p>Python</p>
+                            <p>MariaDB</p>
+                        </div>
+                    </div>
+                    <div id="technologies">
+                        <h3>Technologies</h3>
+                        <div>
+                            <p>Google Cloud</p>
+                            <p>Git Version Control</p>
+                            <p>Ubuntu</p>
+                            <p>Windows</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div id="contact-me-section">
-            <h2>Contact Me</h2>
-            <div id="contact-me-body">
-                <p>Email: arunamgupta97@gmail.com</p>
-                <p>Github:
-                    <a href="https://github.com/Arunam97" target="_blank">github.com/Arunam97</a> </p>
+            <div id="portfolio-section">
+                <h2>Portfolio</h2>
+                <div id="portfolio-body">
+                    <p>3 real life projects under construction.</p>
+                    <p></p>Next update on 31st October.</p>
+                </div>
+            </div>
+            <div id="contact-me-section">
+                <h2>Contact Me</h2>
+                <div id="contact-me-body">
+                    <p>Email: arunamgupta97@gmail.com</p>
+                    <a href="https://github.com/Arunam97" target="_blank">Github</a>
+                </div>
             </div>
         </div>
     </div>
