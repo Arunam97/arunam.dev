@@ -9,12 +9,7 @@
 
 * {
     text-align: center;
-    font-family: 'Merriweather', serif;
-}
-
-.nav-buttons {
-    background-color: #f4dbdc;
-    border: black solid 0.1vw;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 h1 {
@@ -23,32 +18,27 @@ h1 {
 
 .smaller-text-1 {
     font-style: italic;
-    font-size: 0.85em
+    font-size: 0.85em;
 }
 
 #top-buttons {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
 
 #top-buttons>button {
-    margin-right: 0.8vw;
-    height: 10vw;
+    border: black solid 0.1vw;
+    opacity: 0.6;
+    margin: 1vw;
+    height: 7.5vh;
+    width: 30vw;
 }
 
-#top-buttons #contact-me-button {
-    margin-right: 0;
-}
-
-#about-me-body {
-    padding: 0vw 5vw 0vw 5vw;
-}
-
-#contact-me-body {
-    padding: 0vw 0vw 5vw 0vw;
+#top-buttons>button>p {
+    font-weight: 600;
 }
 
 #about-me-body,
@@ -57,7 +47,8 @@ h1 {
 #portfolio-body,
 #contact-me-body {
     margin: 2vw;
-    border: black solid thin;
+    padding: 5vw;
+    border: black solid 0.5vw;
 }
 
 #skills-body {
@@ -74,12 +65,18 @@ h1 {
 
 @media only screen and (min-width: 600px) {
     #top-buttons>button {
-        margin-right: 0.8vw;
+        margin: 0 1vw 0 1vw;
         height: 5vw;
         width: 10vw;
     }
-    #about-me-body {
-        padding: 2vw;
+    #about-me-body,
+    #education-body,
+    #skills-body>div,
+    #portfolio-body,
+    #contact-me-body {
+        margin: 2vw;
+        padding: 1vw;
+        border: black solid 0.3vw;
     }
     #skills-body {
         flex-direction: row;
