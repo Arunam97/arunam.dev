@@ -14,6 +14,21 @@
 
 h1 {
     margin-top: 2vh;
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 0.4vw;
+}
+
+h2 {
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 0.4vw;
+}
+
+h3 {
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 0.4vw;
 }
 
 .smaller-text-1 {
@@ -31,7 +46,7 @@ h1 {
 
 #top-buttons>button {
     border: black solid 0.1vw;
-    opacity: 0.6;
+    opacity: 1;
     margin: 1vw;
     height: 10vw;
     width: 30vw;
@@ -45,7 +60,22 @@ h1 {
 #contact-me-body {
     margin: 2vw;
     padding: 5vw;
-    border: black solid 0.5vw;
+    border: black solid 0.4vw;
+}
+
+#about-me-body {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#about-me-body>div>img {
+    width: 50vw;
+    border: solid black 0.2vw;
+}
+
+#about-me-body #first-line {
+    font-size: 1.5em;
 }
 
 #skills-body {
@@ -61,6 +91,9 @@ h1 {
 }
 
 @media only screen and (min-width: 600px) {
+    html {
+        height: 150vh;
+    }
     #top-buttons>button {
         margin: 0 1vw 0 1vw;
         height: 6vw;
@@ -71,19 +104,35 @@ h1 {
     #skills-body>div,
     #portfolio-body,
     #contact-me-body {
-        margin: 2vw;
+        margin: 1vw;
         padding: 1vw;
-        border: black solid 0.3vw;
+        border: black solid 0.2vw;
+    }
+    #about-me-body {
+        display: flex;
+        flex-direction: row-reverse;
+        flex-wrap: nowrap;
+    }
+    #about-me-body>div {
+        padding: 1vw 2vw 1vw 2vw;
+    }
+    #about-me-body>div>p {
+        margin: 0;
+        padding-bottom: 1vw;
+        text-align: left;
+    }
+    #about-me-body>div>img {
+        width: 30vw;
+        border: solid black 0.2vw;
     }
     #skills-body {
         flex-direction: row;
         flex-wrap: wrap;
         align-items: baseline;
-        justify-content: center;
+        justify-content: space-between;
     }
     #skills-body>div {
         width: 25vw;
-        margin-right: 2vw;
     }
     #contact-me-body {
         padding: 0vw 0vw 2vw 0vw;
