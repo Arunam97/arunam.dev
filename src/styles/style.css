@@ -95,7 +95,7 @@ a {
     height: 10vw;
     width: 30vw;
     font-weight: 600;
-    font-size: 1.5vw;
+    font-size: 1.25em;
 }
 
 #about-me-body,
@@ -150,6 +150,7 @@ a {
         margin: 0 1vw 0 1vw;
         height: 6vw;
         width: 11vw;
+        font-size: 1.5vw;
     }
     #about-me-body,
     #education-body,
