@@ -15,7 +15,7 @@
 <body onload="start()">
     <div id="header">
         <h1>Arunam Gupta</h1>
-        <div id="nav-bar">
+        <div>
             <nav id="top-buttons">
                 <button onclick="buttonClick('about-me')" class="nav-buttons" id="about-me-button">About Me</button>
                 <button onclick="buttonClick('education')" class="nav-buttons" id="education-button">Education</button>
@@ -44,36 +44,45 @@
         <div id="education-section">
             <h2>Education</h2>
             <div id="education-body">
-                <p class="no-bottom-padding">University of Maryland</p>
-                <p class="smaller-text italic no-top-padding">College Park, MD</p>
-                <p class="no-bottom-padding">B.S. in Computer Science</p>
-                <p class="smaller-text italic no-top-padding">Expected Graduation: May 2022</p>
+                <p id="education-fl" class="no-bottom-margin">University of Maryland</p>
+                <p class="smaller-text italic no-top-margin">College Park, MD</p>
+                <p class="no-bottom-margin">B.S. in Computer Science</p>
+                <p class="smaller-text italic no-top-margin">Expected Graduation: May 2022</p>
             </div>
         </div>
         <div id="skills-section">
             <h2>Skills</h2>
             <div id="skills-body">
-                <div id="front-end">
-                    <h3>Front-End</h3>
-                    <div>
-                        <p>HTML5</p>
-                        <p>CSS3</p>
-                        <p>JavaScript</p>
+                <div>
+                    <h3>Programming Languages</h3>
+                    <div id="pl-box">
+                        <hr>
+                        <div>
+                            <h4>Front-End</h4>
+                            <p>HTML5 | CSS3 | JavaScript | TypeScript</p>
+                        </div>
+                        <hr>
+                        <div>
+                            <h4>Back-End</h4>
+                            <p>Python | Node.js</p>
+                        </div>
+                        <hr>
+                        <div>
+                            <h4>Databases</h4>
+                            <p>MariaDB | PostgreSQL</p>
+                        </div>
                     </div>
                 </div>
-                <div id="back-end">
-                    <h3>Back-End</h3>
-                    <div>
-                        <p>Python</p>
-                        <p>MariaDB</p>
-                    </div>
-                </div>
-                <div id="technologies">
+                <div>
                     <h3>Technologies</h3>
-                    <div>
+                    <div id="technology-box">
+                        <hr>
                         <p>Google Cloud</p>
+                        <hr>
                         <p>Git Version Control</p>
+                        <hr>
                         <p>Ubuntu</p>
+                        <hr>
                         <p>Windows</p>
                     </div>
                 </div>
@@ -98,8 +107,8 @@
             <h2>Contact Me</h2>
             <div id="contact-me-body">
                 <p>Email: arunamgupta97@gmail.com</p>
-                <a href="https://github.com/Arunam97" target="_blank">Github</a>
-                <a href="https://www.linkedin.com/in/arunamgupta/" target="_blank">LinkedIn</a>
+                <div><a href="https://github.com/Arunam97" target="_blank">Github</a>
+                    <a href="https://www.linkedin.com/in/arunamgupta/" target="_blank">LinkedIn</a></div>
             </div>
         </div>
     </div>
