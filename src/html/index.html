@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html id='html-div'>
+<html>
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,8 +14,8 @@
 
 <body onload="start()">
     <div id="header">
-        <h1>Arunam Gupta</h1>
         <div>
+            <h1 id="name">Arunam Gupta</h1>
             <nav id="top-buttons">
                 <button onclick="buttonClick('about-me')" class="nav-buttons" id="about-me-button">About Me</button>
                 <button onclick="buttonClick('education')" class="nav-buttons" id="education-button">Education</button>
@@ -30,7 +30,7 @@
             <h2>About me</h2>
             <div id="about-me-body">
                 <div>
-                    <img src="/src/images/icon.jpg">
+                    <img src="/src/images/icon.jpg" alt="A photo of me - Arunam Gupta">
                 </div>
                 <div>
                     <p id="first-line">Hi! My name is Arunam Gupta.</p>
@@ -54,37 +54,28 @@
             <h2>Skills</h2>
             <div id="skills-body">
                 <div>
-                    <h3>Programming Languages</h3>
-                    <div id="pl-box">
-                        <hr>
-                        <div>
-                            <h4>Front-End</h4>
-                            <p>HTML5 | CSS3 | JavaScript | TypeScript</p>
-                        </div>
-                        <hr>
-                        <div>
-                            <h4>Back-End</h4>
-                            <p>Python | Node.js</p>
-                        </div>
-                        <hr>
-                        <div>
-                            <h4>Databases</h4>
-                            <p>MariaDB | PostgreSQL</p>
-                        </div>
-                    </div>
+                    <h3>Front-End</h3>
+                    <p>HTML5</p>
+                    <p>CSS3</p>
+                    <p>JavaScript</p>
+                    <p>TypeScript</p>
+                </div>
+                <div>
+                    <h3>Back-End</h3>
+                    <p>Python</p>
+                    <p>Node.js</p>
+                </div>
+                <div>
+                    <h3>Databases</h3>
+                    <p>MariaDB</p>
+                    <p>PostgreSQL</p>
                 </div>
                 <div>
                     <h3>Technologies</h3>
-                    <div id="technology-box">
-                        <hr>
-                        <p>Google Cloud</p>
-                        <hr>
-                        <p>Git Version Control</p>
-                        <hr>
-                        <p>Ubuntu</p>
-                        <hr>
-                        <p>Windows</p>
-                    </div>
+                    <p>Google Cloud</p>
+                    <p>Git Version Control</p>
+                    <p>Ubuntu</p>
+                    <p>Windows</p>
                 </div>
             </div>
         </div>
@@ -94,8 +85,7 @@
                 <div id="privatesm">
                     <h3>PrivateSM</h3>
                     <p class="light-text">Under Construction</p>
-                    <p>PrivateSM ("Private Social Media") is a social media site where you can stay in touch with friends and family without the concern of predatory data harvesting or algorithmically generated feeds that promote social polarization and
-                        confirmation biases.</p>
+                    <p>PrivateSM ("Private Social Media") is an upcoming security and privacy centered social media site.</p>
                 </div>
                 <div id="project-2">
                     <h3 class="light-text">Next Project: Under Construction</h3>
