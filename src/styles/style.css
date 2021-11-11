@@ -24,17 +24,17 @@ font-family: 'Lusitana', serif;
     h1 {
         color: red;
         font-size: 2em;
-        font-weight: 600;
+        font-weight: 700;
     }
     
     h2 {
-        color: darkviolet;
+        color: red;
         font-size: 1.8em;
         font-weight: 600;
     }
     
     h3 {
-        color: green;
+        color: black;
         font-size: 1.6em;
         font-weight: 600;
     }
@@ -247,7 +247,7 @@ font-family: 'Lusitana', serif;
             min-height: 110vh;
         }
         .light-text {
-            margin: 0.25vw;
+            margin: 1vw;
         }
         body {
             margin-top: 1vw;
@@ -260,12 +260,15 @@ font-family: 'Lusitana', serif;
             width: 20vw;
             height: 5vw;
         }
-        #skills-body h3 {
-            margin: 1vw 0vw 2vw 0vw;
-        }
         #skills-body>div {
             width: 30vw;
             margin: 2vw;
+        }
+        #skills-body h3 {
+            margin: 1vw 0vw 2vw 0vw;
+        }
+        #skills-body p {
+            margin-bottom: 1vw;
         }
         #portfolio-body h3 {
             margin: 1vw 1vw 0vw 1vw;
