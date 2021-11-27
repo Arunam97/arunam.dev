@@ -1,0 +1,361 @@
+    /*
+HEADINGS:
+font-family: 'Raleway', sans-serif;
+
+PARAGRAPHS:
+font-family: 'Lusitana', serif;
+*/
+    
+    * {
+        background-color: white;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        font-family: 'Raleway', sans-serif;
+    }
+    
+    h1,
+    h2,
+    h3 {
+        text-decoration: underline;
+    }
+    
+    h1 {
+        color: black;
+        font-size: 2em;
+        font-weight: 600;
+    }
+    
+    h2 {
+        color: black;
+        font-size: 1.8em;
+        font-weight: 600;
+    }
+    
+    h3 {
+        color: black;
+        font-size: 1.6em;
+        font-weight: 500;
+    }
+    
+    p {
+        color: black;
+        font-size: 1.2em;
+        font-family: 'Lusitana', serif;
+        margin: 0vw 1.5vw 4vw 1.5vw;
+    }
+    
+    a {
+        color: blue;
+        font-size: 1.2em;
+        padding: 1vw;
+        margin: 1vw;
+        font-weight: 700;
+    }
+    
+    .smaller-text {
+        font-size: 1em;
+        margin: 0 0 4vw 0;
+    }
+    
+    .italic {
+        font-style: italic;
+    }
+    
+    .light-text {
+        color: grey;
+    }
+    
+    .no-top-margin {
+        margin-top: 0vw;
+    }
+    
+    .no-bottom-margin {
+        margin-bottom: 0vw;
+    }
+    
+    #about-me-body span {
+        font-family: 'Lusitana', serif;
+        font-weight: 700;
+    }
+    
+    #about-me-body #nm {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 500;
+        text-decoration: underline;
+    }
+    
+    #about-me-body #jobs1 {
+        color: brown;
+    }
+    
+    #about-me-body #jobs2 {
+        color: darkcyan;
+    }
+    
+    #about-me-body #is {
+        color: darkgoldenrod;
+    }
+    
+    #about-me-body #univ {
+        color: darkorchid;
+    }
+    
+    #about-me-body #cs {
+        color: red;
+    }
+    
+    #contact-me-anchor {
+        margin: 0;
+        padding: 0;
+        font-size: 1em;
+    }
+    
+    @media only screen and (max-width: 600px) {
+        h1 {
+            border-style: solid;
+            border-color: black;
+            border-width: 0 0 0.7vw 0;
+            padding: 1vw 0vw 1vw 0vw;
+            position: sticky;
+        }
+        h2 {
+            margin: 2vw 0 2vw 0;
+        }
+        #about-me-section,
+        #education-section,
+        #skills-section,
+        #portfolio-section,
+        #contact-me-section {
+            margin: 2vw 3vw 4vw 3vw;
+            border-style: solid;
+            border-width: 0.6vw;
+            border-color: black;
+        }
+        #about-me-body {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+        #about-me-body>div>img {
+            margin: 2vw 0 0 0;
+            width: 50vw;
+            border: solid;
+            border-width: 0.5vw;
+            border-color: black;
+            border-radius: 50%;
+        }
+        #about-me-body #first-line {
+            font-family: 'Raleway', sans-serif;
+            font-size: 2em;
+        }
+        #skills-body {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        #skills-body>div {
+            margin: 2vw 15vw 6vw 15vw;
+            border-style: solid;
+            border-width: 0.5vw;
+            border-color: black;
+        }
+        #skills-body h3 {
+            margin: 2vw 0vw 3vw 0vw;
+        }
+        #portfolio-body {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        #portfolio-body>div {
+            margin: 2vw 5vw 6vw 5vw;
+            border-style: solid;
+            border-width: 0.5vw;
+            border-color: black;
+        }
+        #portfolio-body h3 {
+            margin: 2vw 0vw 0vw 0vw;
+        }
+        #contact-me-body>* {
+            margin: 2vw 0vw 5vw 0vw;
+        }
+    }
+    
+    @media only screen and (min-width: 600px) {
+        h1 {
+            border-style: solid;
+            border-color: black;
+            border-width: 0 0 0.4vw 0;
+            padding: 0.5vw;
+            position: sticky;
+        }
+        h2 {
+            margin: 2vw 0 2vw 0;
+        }
+        p {
+            margin: 0vw 5vw 2vw 5vw;
+        }
+        .smaller-text {
+            font-size: 1em;
+            margin: 0 0 2vw 0;
+        }
+        #about-me-section,
+        #education-section,
+        #skills-section,
+        #portfolio-section,
+        #contact-me-section {
+            margin: 2vw 5vw 4vw 5vw;
+            border-style: solid;
+            border-width: 0.3vw;
+            border-color: black;
+        }
+        #about-me-body>div>img {
+            margin: 2vw 0 4vw 0;
+            width: 50vw;
+            border: solid;
+            border-width: 0.3vw;
+            border-color: black;
+            border-radius: 50%;
+        }
+        #about-me-body #first-line {
+            font-family: 'Raleway', sans-serif;
+            font-size: 2em;
+            margin: 0vw 0vw 4vw 0vw;
+        }
+        #education-body #education-fl {
+            margin-top: 2vw;
+        }
+        #skills-body {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        #skills-body>div {
+            width: 35vw;
+            margin: 2vw 2vw 4vw 2vw;
+            border-style: solid;
+            border-width: 0.3vw;
+            border-color: black;
+        }
+        #skills-body h3 {
+            margin: 2vw 0vw 2vw 0vw;
+        }
+        #skills-body p {
+            margin: 0vw 0vw 2vw 0vw;
+        }
+        #portfolio-body {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: center;
+        }
+        #portfolio-body>div {
+            margin: 2vw 2vw 4vw 2vw;
+            border-style: solid;
+            border-width: 0.3vw;
+            border-color: black;
+        }
+        #portfolio-body h3 {
+            margin: 2vw 0vw 0vw 0vw;
+        }
+        #portfolio-body p {
+            margin: 0vw 2vw 2vw 2vw;
+        }
+        #contact-me-body>* {
+            margin: 0vw 0vw 3vw 0vw;
+        }
+    }
+    
+    @media only screen and (min-width: 900px) {
+        .smaller-text {
+            font-size: 1em;
+            margin: 0 0 1vw 0;
+        }
+        h1 {
+            border-style: solid;
+            border-color: black;
+            border-width: 0 0 0.2vw 0;
+            padding: 0.5vw;
+            position: sticky;
+        }
+        h2 {
+            margin: 1vw 0 1vw 0;
+        }
+        p {
+            margin: 0vw 4vw 2vw 4vw;
+        }
+        #about-me-section,
+        #education-section,
+        #skills-section,
+        #portfolio-section,
+        #contact-me-section {
+            margin: 2vw 12vw 3vw 12vw;
+            border-style: solid;
+            border-width: 0.2vw;
+            border-color: black;
+        }
+        #about-me-body {
+            display: flex;
+            flex-direction: row-reverse;
+            flex-wrap: nowrap;
+        }
+        #about-me-body>div>img {
+            border-color: black;
+            width: 25vw;
+            border-width: 0.2vw;
+            margin: 2vw;
+            border-radius: 50%;
+        }
+        #about-me-body #first-line {
+            font-family: 'Raleway', sans-serif;
+            font-size: 2em;
+            margin: 2vw 1vw 2vw 1vw;
+        }
+        #education-body #education-fl {
+            margin-top: 0vw;
+        }
+        #skills-body {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        #skills-body>div {
+            width: 25vw;
+            margin: 2vw 2vw 4vw 2vw;
+            border-style: solid;
+            border-width: 0.2vw;
+            border-color: black;
+        }
+        #skills-body h3 {
+            margin: 2vw 0vw 2vw 0vw;
+        }
+        #skills-body p {
+            margin: 0vw 0vw 2vw 0vw;
+        }
+        #portfolio-body {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: center;
+        }
+        #portfolio-body>div {
+            margin: 2vw 2.5vw 2vw 2.5vw;
+            border-style: solid;
+            border-width: 0.2vw;
+            border-color: black;
+        }
+        #portfolio-body h3 {
+            margin: 1vw 0vw 0vw 0vw;
+        }
+        #portfolio-body p {
+            margin: 0vw 2vw 2vw 2vw;
+        }
+        #contact-me-body>* {
+            margin: 1vw 0vw 2vw 0vw;
+        }
+    }

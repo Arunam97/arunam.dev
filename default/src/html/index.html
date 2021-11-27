@@ -13,33 +13,35 @@
 </head>
 
 <body onload="start()">
-    <div id="header">
-        <div>
-            <h1 id="name">Arunam Gupta</h1>
-            <nav id="top-buttons">
-                <button onclick="buttonClick('about-me')" class="nav-buttons" id="about-me-button">About Me</button>
-                <button onclick="buttonClick('education')" class="nav-buttons" id="education-button">Education</button>
-                <button onclick="buttonClick('skills')" class="nav-buttons" id="skills-button">Skills</button>
-                <button onclick="buttonClick('portfolio')" class="nav-buttons" id="portfolio-button">Portfolio</button>
-                <button onclick="buttonClick('contact-me')" class="nav-buttons" id="contact-me-button">Contact Me</button>
-            </nav>
-        </div>
-    </div>
+    <h1>Arunam Gupta</h1>
     <div id="sections">
         <div id="about-me-section">
-            <h2>About me</h2>
             <div id="about-me-body">
                 <div>
                     <img src="/src/images/me.jpg" alt="A photo of Arunam Gupta">
                 </div>
                 <div>
-                    <p id="first-line">Hi! My name is Arunam Gupta.</p>
-                    <p>I am a web developer and an international student at the University of Maryland, College Park, majoring in Computer Science and graduating in May 2022.</p>
-                    <p>My speciality is building clean, efficient, and scalable solutions. I have spent a long time teaching myself many different technologies and am able to build both the front-end and the back-end of any product.</p>
-                    <p>My interests include web development, cyber-security, stock market, gym and card tricks.</p>
+                    <p id="first-line">
+                        Hi! My name is <span id="nm">Arunam Gupta</span>.
+                    </p>
+                    <p>
+                        I am a <span id="jobs1">web developer</span>, <span id="jobs2">cyber-security engineer</span> and an <span id="is">international student</span> at the <span id="univ">University of Maryland, College Park</span>, majoring in
+                        <span id="cs">Computer Science</span> and graduating in May 2022.
+                    </p>
+                    <p>
+                        My speciality is building clean, efficient, and scalable solutions. I have spent a long time teaching myself many different technologies and am able to build both the front-end and the back-end of any product.
+                    </p>
+                    <p>
+                        I am also very well versed in the current cyber-security threats faced by companies which allows me to ensure that all my applications are secure from script hackers to seasoned veterans.
+                    </p>
+                    <p>
+                        Because of my experience I am able to design efficient algorithms, manage project versions, and empoy the latest and best industry practices to the project at hand.
+                    </p>
+                    <p class="smaller-text italic">If you would like to talk to me about any employment opportunities please scroll down to my <a href="#contact-me-section" id="contact-me-anchor">contact me section.</a>
+                    </p>
                 </div>
+
             </div>
-            <p class="smaller-text italic">If you would like to talk to me about any employment opportunities please go to my contact me page.</p>
         </div>
         <div id="education-section">
             <h2>Education</h2>
@@ -82,12 +84,12 @@
         <div id="portfolio-section">
             <h2>Portfolio</h2>
             <div id="portfolio-body">
-                <div id="privatesm">
+                <div>
                     <h3>PrivateSM</h3>
                     <p class="light-text">Under Construction</p>
                     <p>PrivateSM is an upcoming security and privacy centered social media site.</p>
                 </div>
-                <div id="project-2">
+                <div>
                     <h3 class="light-text">Next Project: Under Construction</h3>
                     <p class="light-text">More good stuff is along the way.</p>
                 </div>
