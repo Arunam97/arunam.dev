@@ -53,6 +53,12 @@ font-family: 'Lusitana', serif;
         font-weight: 700;
     }
     
+    li {
+        color: black;
+        font-size: 1.2em;
+        font-family: 'Lusitana', serif;
+    }
+    
     .smaller-text {
         font-size: 1em;
         margin: 0 0 4vw 0;
@@ -118,6 +124,7 @@ font-family: 'Lusitana', serif;
             border-width: 0 0 0.7vw 0;
             padding: 1vw 0vw 1vw 0vw;
             position: sticky;
+            top: 0;
         }
         h2 {
             margin: 2vw 0 2vw 0;
@@ -148,6 +155,14 @@ font-family: 'Lusitana', serif;
         #about-me-body #first-line {
             font-family: 'Raleway', sans-serif;
             font-size: 2em;
+        }
+        .li1a {
+            text-align: left;
+            margin: 0vw 1.5vw 2vw 1.5vw;
+        }
+        .li1 {
+            text-align: left;
+            margin: 0vw 1.5vw 2vw 10vw;
         }
         #skills-body {
             display: flex;
@@ -191,6 +206,7 @@ font-family: 'Lusitana', serif;
             border-width: 0 0 0.4vw 0;
             padding: 0.5vw;
             position: sticky;
+            top: 0;
         }
         h2 {
             margin: 2vw 0 2vw 0;
@@ -224,6 +240,14 @@ font-family: 'Lusitana', serif;
             font-family: 'Raleway', sans-serif;
             font-size: 2em;
             margin: 0vw 0vw 4vw 0vw;
+        }
+        .li1a {
+            text-align: left;
+            margin: 0vw 1.5vw 2vw 1.5vw;
+        }
+        .li1 {
+            text-align: left;
+            margin: 0vw 1.5vw 2vw 5vw;
         }
         #education-body #education-fl {
             margin-top: 2vw;
@@ -281,6 +305,7 @@ font-family: 'Lusitana', serif;
             border-width: 0 0 0.2vw 0;
             padding: 0.5vw;
             position: sticky;
+            top: 0;
         }
         h2 {
             margin: 1vw 0 1vw 0;
@@ -314,6 +339,14 @@ font-family: 'Lusitana', serif;
             font-family: 'Raleway', sans-serif;
             font-size: 2em;
             margin: 2vw 1vw 2vw 1vw;
+        }
+        .li1a {
+            text-align: left;
+            margin: 0vw 1.5vw 2vw 1.5vw;
+        }
+        .li1 {
+            text-align: left;
+            margin: 0vw 1.5vw 2vw 3vw;
         }
         #education-body #education-fl {
             margin-top: 0vw;
