@@ -1,6 +1,3 @@
 dispatch:
 - url: "arunam.dev/*"
   service: default
-
-- url: "privatesm.arunam.dev/*"
-  service: privatesm
