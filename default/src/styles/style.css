@@ -7,6 +7,7 @@ font-family: 'Lusitana', serif;
 */
     
     * {
+        color: black;
         background-color: white;
         padding: 0;
         margin: 0;
@@ -22,26 +23,22 @@ font-family: 'Lusitana', serif;
     }
     
     h1 {
-        color: black;
         font-size: 2em;
         font-weight: 600;
         background-color: lightsalmon;
     }
     
     h2 {
-        color: black;
         font-size: 1.8em;
         font-weight: 600;
     }
     
     h3 {
-        color: black;
         font-size: 1.6em;
         font-weight: 500;
     }
     
     p {
-        color: black;
         font-size: 1.2em;
         font-family: 'Lusitana', serif;
         margin: 0vw 1.5vw 4vw 1.5vw;
@@ -56,7 +53,6 @@ font-family: 'Lusitana', serif;
     }
     
     li {
-        color: black;
         font-size: 1.2em;
         font-family: 'Lusitana', serif;
     }
@@ -95,23 +91,23 @@ font-family: 'Lusitana', serif;
     }
     
     #about-me-body #jobs1 {
-        color: brown;
+        color: rgb(62, 22, 138);
     }
     
     #about-me-body #jobs2 {
-        color: darkgreen;
+        color: rgb(0, 100, 0);
     }
     
     #about-me-body #is {
-        color: darkgoldenrod;
+        color: rgb(168, 114, 14);
     }
     
     #about-me-body #univ {
-        color: darkorchid;
+        color: rgb(153, 50, 204);
     }
     
     #about-me-body #cs {
-        color: red;
+        color: rgb(209, 47, 47);
     }
     
     #contact-me-anchor {
