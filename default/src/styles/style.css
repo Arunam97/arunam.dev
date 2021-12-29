@@ -8,12 +8,11 @@ font-family: 'Lusitana', serif;
     
     * {
         color: black;
-        background-color: white;
+        background-color: lightgreen;
         padding: 0;
         margin: 0;
         text-align: center;
         font-family: 'Raleway', sans-serif;
-        background-color: lightgreen;
     }
     
     h1,
@@ -179,13 +178,16 @@ font-family: 'Lusitana', serif;
             justify-content: center;
         }
         #skills-body>div {
-            margin: 2vw 15vw 6vw 15vw;
+            margin: 2vw 5vw 6vw 5vw;
             border-style: solid;
             border-width: 0.5vw;
             border-color: black;
         }
-        #skills-body h3 {
-            margin: 2vw 0vw 3vw 0vw;
+        #skills-body p {
+            margin: 2vw;
+        }
+        #skills-body span {
+            font-weight: 600;
         }
         #portfolio-body {
             display: flex;
