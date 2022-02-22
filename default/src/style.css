@@ -1,30 +1,19 @@
-    /*
-HEADINGS:
-font-family: 'Raleway', sans-serif;
-
-PARAGRAPHS:
-font-family: 'Lusitana', serif;
-*/
-    
     * {
-        color: black;
-        background-color: lightgreen;
         padding: 0;
         margin: 0;
         text-align: center;
-        font-family: 'Raleway', sans-serif;
     }
     
     h1,
     h2,
     h3 {
         text-decoration: underline;
+        font-family: sans-serif;
     }
     
     h1 {
         font-size: 2em;
         font-weight: 600;
-        background-color: lightsalmon;
     }
     
     h2 {
@@ -39,12 +28,13 @@ font-family: 'Lusitana', serif;
     
     p {
         font-size: 1.2em;
-        font-family: 'Lusitana', serif;
+        font-family: serif;
         margin: 0vw 1.5vw 4vw 1.5vw;
     }
     
     a {
         color: blue;
+        font-family: sans-serif;
         font-size: 1.2em;
         padding: 1vw;
         margin: 1vw;
@@ -53,16 +43,7 @@ font-family: 'Lusitana', serif;
     
     li {
         font-size: 1.2em;
-        font-family: 'Lusitana', serif;
-    }
-    
-    .smaller-text {
-        font-size: 1em;
-        margin: 0 0 4vw 0;
-    }
-    
-    .italic {
-        font-style: italic;
+        font-family: serif;
     }
     
     .light-text {
@@ -78,13 +59,13 @@ font-family: 'Lusitana', serif;
     }
     
     #about-me-body span {
-        font-family: 'Lusitana', serif;
+        font-family: serif;
         font-weight: 700;
         text-decoration: underline;
     }
     
     #about-me-body #nm {
-        font-family: 'Raleway', sans-serif;
+        font-family: sans-serif;
         font-weight: 500;
         text-decoration: underline;
     }
@@ -115,22 +96,12 @@ font-family: 'Lusitana', serif;
         font-size: 1em;
     }
     
-    #sections * {
-        background-color: lightblue;
-    }
-    
-    #skills-body *,
-    #portfolio-body * {
-        background-color: lightpink;
-    }
-    
     @media only screen and (max-width: 600px) {
         h1 {
             border-style: solid;
             border-color: black;
             border-width: 0 0 0.7vw 0;
             padding: 1vw 0vw 1vw 0vw;
-            position: sticky;
             top: 0;
         }
         h2 {
@@ -160,7 +131,7 @@ font-family: 'Lusitana', serif;
             border-radius: 50%;
         }
         #about-me-body #first-line {
-            font-family: 'Raleway', sans-serif;
+            font-family: sans-serif;
             font-size: 2em;
         }
         .li1a {
@@ -170,6 +141,19 @@ font-family: 'Lusitana', serif;
         .li1 {
             text-align: left;
             margin: 0vw 1.5vw 2vw 10vw;
+        }
+        #body-last-line {
+            font-size: 1em;
+            margin: 0vw 1.5vw 4vw 1.5vw;
+            font-style: italic;
+        }
+        .education-large {
+            margin: 0vw;
+        }
+        .education-small {
+            font-size: 1em;
+            margin: 0vw 0vw 4vw 0vw;
+            font-style: italic;
         }
         #skills-body {
             display: flex;
@@ -188,6 +172,7 @@ font-family: 'Lusitana', serif;
         }
         #skills-body span {
             font-weight: 600;
+            font-family: sans-serif;
         }
         #portfolio-body {
             display: flex;
@@ -215,7 +200,6 @@ font-family: 'Lusitana', serif;
             border-color: black;
             border-width: 0 0 0.4vw 0;
             padding: 0.5vw;
-            position: sticky;
             top: 0;
         }
         h2 {
@@ -223,10 +207,6 @@ font-family: 'Lusitana', serif;
         }
         p {
             margin: 0vw 5vw 2vw 5vw;
-        }
-        .smaller-text {
-            font-size: 1em;
-            margin: 0 0 2vw 0;
         }
         #about-me-section,
         #education-section,
@@ -247,7 +227,7 @@ font-family: 'Lusitana', serif;
             border-radius: 50%;
         }
         #about-me-body #first-line {
-            font-family: 'Raleway', sans-serif;
+            font-family: sans-serif;
             font-size: 2em;
             margin: 0vw 0vw 4vw 0vw;
         }
@@ -259,8 +239,21 @@ font-family: 'Lusitana', serif;
             text-align: left;
             margin: 0vw 1.5vw 2vw 5vw;
         }
+        #body-last-line {
+            font-size: 1em;
+            margin: 0vw 1vw 4vw 1.5vw;
+            font-style: italic;
+        }
         #education-body #education-fl {
             margin-top: 2vw;
+        }
+        .education-large {
+            margin: 0vw;
+        }
+        .education-small {
+            font-size: 1em;
+            margin: 0vw 0vw 4vw 0vw;
+            font-style: italic;
         }
         #skills-body {
             display: flex;
@@ -275,11 +268,12 @@ font-family: 'Lusitana', serif;
             border-width: 0.3vw;
             border-color: black;
         }
-        #skills-body h3 {
-            margin: 2vw 0vw 2vw 0vw;
+        #skills-body span {
+            font-weight: 600;
+            font-family: sans-serif;
         }
         #skills-body p {
-            margin: 0vw 0vw 2vw 0vw;
+            margin: 1vw 2vw 1vw 2vw;
         }
         #portfolio-body {
             display: flex;
@@ -305,16 +299,11 @@ font-family: 'Lusitana', serif;
     }
     
     @media only screen and (min-width: 900px) {
-        .smaller-text {
-            font-size: 1em;
-            margin: 0 0 1vw 0;
-        }
         h1 {
             border-style: solid;
             border-color: black;
             border-width: 0 0 0.2vw 0;
             padding: 0.5vw;
-            position: sticky;
             top: 0;
         }
         h2 {
@@ -346,7 +335,7 @@ font-family: 'Lusitana', serif;
             border-radius: 50%;
         }
         #about-me-body #first-line {
-            font-family: 'Raleway', sans-serif;
+            font-family: sans-serif;
             font-size: 2em;
             margin: 2vw 1vw 2vw 1vw;
         }
@@ -358,8 +347,13 @@ font-family: 'Lusitana', serif;
             text-align: left;
             margin: 0vw 1.5vw 2vw 3vw;
         }
-        #education-body #education-fl {
-            margin-top: 0vw;
+        .education-large {
+            margin: 0vw;
+        }
+        .education-small {
+            font-size: 1em;
+            margin: 0vw 0vw 2vw 0vw;
+            font-style: italic;
         }
         #skills-body {
             display: flex;
@@ -374,11 +368,12 @@ font-family: 'Lusitana', serif;
             border-width: 0.2vw;
             border-color: black;
         }
-        #skills-body h3 {
-            margin: 2vw 0vw 2vw 0vw;
+        #skills-body span {
+            font-weight: 600;
+            font-family: sans-serif;
         }
         #skills-body p {
-            margin: 0vw 0vw 2vw 0vw;
+            margin: 1vw 2vw 1vw 2vw;
         }
         #portfolio-body {
             display: flex;

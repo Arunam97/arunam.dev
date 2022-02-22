@@ -5,8 +5,8 @@ handlers:
 - url: /
   secure: always
   redirect_http_response_code: 301
-  static_files: src/html/index.html
-  upload: src/html/index.html
+  static_files: src/index.html
+  upload: src/index.html
   
 - url: /src
   static_dir: src
