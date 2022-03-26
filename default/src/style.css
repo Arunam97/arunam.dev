@@ -3,28 +3,13 @@
     margin: 0;
 }
 
-body {
-    height: 101vh;
-}
-
 
 /*
-body>* {
-    border: solid red;
-}
-
-body>*>* {
-    border: solid blue;
-}
-
-body>*>*>* {
-    border: solid green;
-}
+Media query for screen size LESS THAN 600px
 */
 
-@media all and (max-width: 500px) {
+@media all and (max-width: 600px) {
     #opening-section {
-        height: 100vh;
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
@@ -45,7 +30,7 @@ body>*>*>* {
         width: 80vw;
     }
     #intro-container {
-        margin: 5vw=-09876
+        margin: 5vw
     }
     #intro-container p {
         margin: 4vw;
@@ -67,7 +52,7 @@ body>*>*>* {
         margin: 2vw 4vw 2vw 4vw;
         font-family: Bahnschrift, sans-serif;
         font-weight: lighter;
-        line-height: 5vw;
+        line-height: 25px;
     }
     #profile-section h2 {
         margin: 6vw 2vw 2vw 2vw;
@@ -98,9 +83,9 @@ body>*>*>* {
         margin: 2vw 4vw 2vw 4vw;
         font-family: Bahnschrift, sans-serif;
         font-weight: lighter;
-        line-height: 5vw;
+        line-height: 25px;
     }
-    #education-section #relevant-coursework h2 {
+    #education-section h2 {
         margin: 6vw 2vw 2vw 2vw;
         font-family: Bahnschrift, sans-serif;
         text-align: center;
@@ -125,7 +110,6 @@ body>*>*>* {
     #work-section h1 {
         margin: 2vw;
         font-family: Bahnschrift, sans-serif;
-        line-height: 7vw;
         text-align: center;
         font-weight: normal;
     }
@@ -134,12 +118,12 @@ body>*>*>* {
         border: solid black 0.5vw;
     }
     #work-section #first-work h2 {
-        margin: 2vw 4vw -1vw 4vw;
+        margin: 2vw 4vw 0vw 4vw;
         font-family: Bahnschrift, sans-serif;
         font-weight: normal;
     }
     #work-section #first-work h3 {
-        margin: -1vw 4vw 0vw 4vw;
+        margin: 0vw 4vw 0vw 4vw;
         font-family: Bahnschrift, sans-serif;
         font-size: 1em;
         font-weight: lighter;
@@ -155,7 +139,7 @@ body>*>*>* {
         margin: 2vw 4vw 2vw 4vw;
         font-family: Bahnschrift, sans-serif;
         font-weight: lighter;
-        line-height: 5vw;
+        line-height: 25px;
     }
     #tech-section {
         margin: 2vw;
@@ -164,11 +148,10 @@ body>*>*>* {
     #tech-section h1 {
         margin: 2vw;
         font-family: Bahnschrift, sans-serif;
-        line-height: 6.5vw;
         text-align: center;
         font-weight: normal;
     }
-    #tech-section>div {
+    #tech-section #skills-list>div {
         margin: 2vw;
         border: solid black 0.5vw;
     }
@@ -193,7 +176,6 @@ body>*>*>* {
     #contact-section h1 {
         margin: 2vw;
         font-family: Bahnschrift, sans-serif;
-        line-height: 6.5vw;
         text-align: center;
         font-weight: normal;
     }
@@ -207,4 +189,229 @@ body>*>*>* {
     }
 }
 
-@media all and (min-width: 500px) {}
+
+/*
+Media query for screen size GREATER THAN 600px
+*/
+
+@media all and (min-width: 600px) {
+    #opening-section {
+        display: flex;
+        flex-direction: row-reverse;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+    #image-of-me-container {
+        margin: 2vw;
+    }
+    #image-of-me-container #image-of-me {
+        width: 35vw;
+        border: solid black 0.3vw;
+        border-radius: 50%;
+    }
+    #border-1 {
+        display: none;
+    }
+    #intro-container {
+        margin: 2vw;
+    }
+    #intro-container p {
+        margin: calc(2vw + 10px);
+        font-family: Bahnschrift, sans-serif;
+        font-size: calc(1.5em + 5px);
+        text-align: center;
+    }
+    #profile-section {
+        margin: 4vw;
+        border: solid black 0.3vw;
+    }
+    #profile-section h1 {
+        margin: 2vw 4vw 1vw 4vw;
+        font-family: Bahnschrift, sans-serif;
+        text-align: center;
+        font-weight: normal;
+    }
+    #profile-section p {
+        margin: 1vw 4vw 2vw 4vw;
+        font-family: Bahnschrift, sans-serif;
+        font-weight: lighter;
+        line-height: 25px;
+        font-size: 1.1em;
+    }
+    #profile-section h2 {
+        margin: 3vw 2vw 1vw 2vw;
+        font-family: Bahnschrift, sans-serif;
+        text-align: center;
+        font-weight: normal;
+    }
+    #profile-section #mini-heading {
+        font-family: Bahnschrift, sans-serif;
+        font-weight: bold;
+    }
+    #profile-section #example {
+        font-family: Bahnschrift, sans-serif;
+        font-weight: lighter;
+        text-decoration: underline 0.3vw;
+    }
+    #education-section {
+        margin: 4vw;
+        border: solid black 0.3vw;
+    }
+    #education-section h1 {
+        margin: 2vw 4vw 1vw 4vw;
+        font-family: Bahnschrift, sans-serif;
+        text-align: center;
+        font-weight: normal;
+    }
+    #education-section #education-intro {
+        margin: 1vw 4vw 2vw 4vw;
+        font-family: Bahnschrift, sans-serif;
+        font-weight: lighter;
+        line-height: 25px;
+        font-size: 1.1em;
+    }
+    #education-section h2 {
+        margin: 3vw 2vw 1vw 2vw;
+        font-family: Bahnschrift, sans-serif;
+        text-align: center;
+        font-weight: normal;
+    }
+    #education-section #relevant-coursework {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #education-section #relevant-coursework p {
+        width: 20vw;
+        margin: 1vw 2vw 2vw 2vw;
+        padding: 1vw;
+        border: solid black 0.2vw;
+        font-family: Bahnschrift, sans-serif;
+        font-weight: lighter;
+        text-align: center;
+    }
+    #education-section span {
+        font-size: 0.9em;
+        font-style: italic;
+    }
+    #work-section {
+        margin: 4vw;
+        border: solid black 0.3vw;
+    }
+    #work-section h1 {
+        margin: 2vw;
+        font-family: Bahnschrift, sans-serif;
+        text-align: center;
+        font-weight: normal;
+    }
+    #work-section #first-work {
+        margin: 2vw;
+        border: solid black 0.2vw;
+    }
+    #work-section #first-work h2 {
+        margin: 2vw 4vw 0vw 4vw;
+        font-family: Bahnschrift, sans-serif;
+        font-weight: normal;
+    }
+    #work-section #first-work h3 {
+        margin: 0vw 4vw 0vw 4vw;
+        font-family: Bahnschrift, sans-serif;
+        font-size: 1em;
+        font-weight: lighter;
+    }
+    #work-section #first-work h4 {
+        margin: 0vw 4vw 2vw 4vw;
+        font-family: Bahnschrift, sans-serif;
+        font-size: 0.9em;
+        font-weight: lighter;
+        font-style: italic;
+    }
+    #work-section #first-work p {
+        margin: 2vw 4vw 2vw 4vw;
+        font-family: Bahnschrift, sans-serif;
+        font-weight: lighter;
+        line-height: 25px;
+        font-size: 1.1em;
+    }
+    #tech-section {
+        margin: 4vw;
+        border: solid black 0.3vw;
+    }
+    #tech-section h1 {
+        margin: 2vw;
+        font-family: Bahnschrift, sans-serif;
+        text-align: center;
+        font-weight: normal;
+    }
+    #tech-section #skills-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #tech-section #skills-list>div {
+        margin: 2vw;
+        border: solid black 0.2vw;
+    }
+    #tech-section h2 {
+        margin: 2vw 4vw 2vw 4vw;
+        font-family: Bahnschrift, sans-serif;
+        text-align: center;
+        font-weight: normal;
+        text-decoration: underline calc(1px + 0.1vw);
+        text-underline-offset: 0.3vw;
+    }
+    #tech-section p {
+        margin: 2vw 4vw 2vw 4vw;
+        font-family: Bahnschrift, sans-serif;
+        font-weight: lighter;
+        text-align: center;
+        font-size: 1.1em;
+    }
+    #contact-section {
+        margin: 4vw;
+        border: solid black 0.3vw;
+    }
+    #contact-section h1 {
+        margin: 2vw;
+        font-family: Bahnschrift, sans-serif;
+        text-align: center;
+        font-weight: normal;
+    }
+    #contact-section p {
+        margin: 2vw;
+        border: solid black 0.2vw;
+        padding: 2vw;
+        font-family: Bahnschrift, sans-serif;
+        text-align: center;
+        font-weight: lighter;
+        font-size: 1.1em;
+    }
+}
+
+
+/*
+Media query for screen size GREATER THAN 1200px
+*/
+
+@media all and (min-width: 1200px) {
+    #image-of-me-container #image-of-me {
+        width: 25vw;
+        border: solid black 0.3vw;
+        border-radius: 50%;
+    }
+    #profile-section,
+    #education-section,
+    #work-section,
+    #tech-section,
+    #contact-section {
+        margin: 5vw 10vw 5vw 10vw;
+    }
+    #profile-section h1,
+    #education-section h1,
+    #work-section h1,
+    #tech-section h1,
+    #contact-section h1 {
+        margin: 1vw;
+    }
+}
