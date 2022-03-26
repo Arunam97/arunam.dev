@@ -10,6 +10,7 @@ Media query for screen size LESS THAN 600px
 
 @media all and (max-width: 600px) {
     #opening-section {
+        min-height: 100vh;
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
@@ -67,7 +68,7 @@ Media query for screen size LESS THAN 600px
     #profile-section #example {
         font-family: Bahnschrift, sans-serif;
         font-weight: lighter;
-        text-decoration: underline 0.5vw;
+        text-decoration: underline 2px;
     }
     #education-section {
         margin: 2vw;
@@ -160,7 +161,7 @@ Media query for screen size LESS THAN 600px
         font-family: Bahnschrift, sans-serif;
         text-align: center;
         font-weight: normal;
-        text-decoration: underline 0.5vw;
+        text-decoration: underline 2px;
         text-underline-offset: 0.5vw;
     }
     #tech-section p {
@@ -196,6 +197,7 @@ Media query for screen size GREATER THAN 600px
 
 @media all and (min-width: 600px) {
     #opening-section {
+        min-height: 100vh;
         display: flex;
         flex-direction: row-reverse;
         flex-wrap: nowrap;
@@ -251,7 +253,7 @@ Media query for screen size GREATER THAN 600px
     #profile-section #example {
         font-family: Bahnschrift, sans-serif;
         font-weight: lighter;
-        text-decoration: underline 0.3vw;
+        text-decoration: underline 2px;
     }
     #education-section {
         margin: 4vw;
@@ -306,7 +308,7 @@ Media query for screen size GREATER THAN 600px
         font-weight: normal;
     }
     #work-section #first-work {
-        margin: 2vw;
+        margin: 2vw 5vw 2vw 5vw;
         border: solid black 0.2vw;
     }
     #work-section #first-work h2 {
@@ -346,6 +348,7 @@ Media query for screen size GREATER THAN 600px
     }
     #tech-section #skills-list {
         display: flex;
+        flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
     }
@@ -358,7 +361,7 @@ Media query for screen size GREATER THAN 600px
         font-family: Bahnschrift, sans-serif;
         text-align: center;
         font-weight: normal;
-        text-decoration: underline calc(1px + 0.1vw);
+        text-decoration: underline 2px;
         text-underline-offset: 0.3vw;
     }
     #tech-section p {
@@ -379,7 +382,7 @@ Media query for screen size GREATER THAN 600px
         font-weight: normal;
     }
     #contact-section p {
-        margin: 2vw;
+        margin: 2vw 5vw 2vw 5vw;
         border: solid black 0.2vw;
         padding: 2vw;
         font-family: Bahnschrift, sans-serif;
@@ -395,11 +398,6 @@ Media query for screen size GREATER THAN 1200px
 */
 
 @media all and (min-width: 1200px) {
-    #image-of-me-container #image-of-me {
-        width: 25vw;
-        border: solid black 0.3vw;
-        border-radius: 50%;
-    }
     #profile-section,
     #education-section,
     #work-section,
@@ -413,5 +411,10 @@ Media query for screen size GREATER THAN 1200px
     #tech-section h1,
     #contact-section h1 {
         margin: 1vw;
+    }
+    #image-of-me-container #image-of-me {
+        width: 25vw;
+        border: solid black 0.3vw;
+        border-radius: 50%;
     }
 }
