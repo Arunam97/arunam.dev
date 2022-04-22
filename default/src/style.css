@@ -2,11 +2,11 @@
     padding: 0;
     margin: 0;
     font-family: Bahnschrift, sans-serif;
-    color: rgb(0, 0, 0, 0.8);
+    color: rgba(0, 0, 0, 0.8);
 }
 
 body {
-    background-color: rgb(128, 128, 128, 0.1);
+    background-color: rgb(173, 216, 230, 0.5);
 }
 
 #intro-container p,
@@ -24,11 +24,14 @@ a:visited {
     color: rgb(100, 0, 100);
 }
 
+#opening-section,
 #profile-section,
 #education-section,
 #work-section,
 #tech-section,
-#contact-section {}
+#contact-section {
+    background-color: rgb(255, 255, 255, 0.7);
+}
 
 
 /*
@@ -37,7 +40,9 @@ Media query for screen size LESS THAN 600px
 
 @media all and (max-width: 600px) {
     #opening-section {
-        min-height: 100vh;
+        margin: 2vh 4vw 2vh 4vw;
+        border: solid black 0.7vw;
+        min-height: 96vh;
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
@@ -76,7 +81,6 @@ Media query for screen size LESS THAN 600px
     }
     #profile-section p {
         margin: 2vw 4vw 2vw 4vw;
-        font-weight: lighter;
         line-height: 25px;
     }
     #profile-section h2 {
@@ -88,7 +92,6 @@ Media query for screen size LESS THAN 600px
         font-weight: bold;
     }
     #profile-section #example {
-        font-weight: lighter;
         text-decoration: underline 2px;
     }
     #education-section {
@@ -102,7 +105,6 @@ Media query for screen size LESS THAN 600px
     }
     #education-section #education-intro {
         margin: 2vw 4vw 2vw 4vw;
-        font-weight: lighter;
         line-height: 25px;
     }
     #education-section h2 {
@@ -119,7 +121,6 @@ Media query for screen size LESS THAN 600px
         margin: 2vw 4vw 4vw 4vw;
         padding: 1vw;
         border: solid black 0.5vw;
-        font-weight: lighter;
         text-align: center;
     }
     #education-section span {
@@ -146,17 +147,14 @@ Media query for screen size LESS THAN 600px
     #work-section #first-work h3 {
         margin: 0vw 4vw 0vw 4vw;
         font-size: 1em;
-        font-weight: lighter;
     }
     #work-section #first-work h4 {
         margin: 0vw 4vw 2vw 4vw;
         font-size: 0.9em;
-        font-weight: lighter;
         font-style: italic;
     }
     #work-section #first-work p {
         margin: 2vw 4vw 2vw 4vw;
-        font-weight: lighter;
         line-height: 25px;
     }
     #tech-section {
@@ -181,7 +179,6 @@ Media query for screen size LESS THAN 600px
     }
     #tech-section p {
         margin: 1vw 4vw 2vw 4vw;
-        font-weight: lighter;
         text-align: center;
     }
     #contact-section {
@@ -193,12 +190,16 @@ Media query for screen size LESS THAN 600px
         text-align: center;
         font-weight: normal;
     }
-    #contact-section p {
-        margin: 4vw;
-        border: solid black 0.5vw;
+    #contact-section #contact-list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #contact-section #contact-list>* {
+        margin: 2vw;
         padding: 2vw;
+        border: solid black 0.5vw;
         text-align: center;
-        font-weight: lighter;
     }
 }
 
@@ -209,7 +210,9 @@ Media query for screen size GREATER THAN 600px
 
 @media all and (min-width: 600px) {
     #opening-section {
-        min-height: 100vh;
+        border: solid black 0.3vw;
+        margin: 2vh 4vw 3vh 4vw;
+        min-height: 95vh;
         display: flex;
         flex-direction: row-reverse;
         flex-wrap: nowrap;
@@ -245,7 +248,6 @@ Media query for screen size GREATER THAN 600px
     }
     #profile-section p {
         margin: 1vw 4vw 2vw 4vw;
-        font-weight: lighter;
         line-height: 25px;
         font-size: 1.1em;
     }
@@ -258,7 +260,6 @@ Media query for screen size GREATER THAN 600px
         font-weight: bold;
     }
     #profile-section #example {
-        font-weight: lighter;
         text-decoration: underline 2px;
     }
     #education-section {
@@ -272,7 +273,6 @@ Media query for screen size GREATER THAN 600px
     }
     #education-section #education-intro {
         margin: 1vw 4vw 2vw 4vw;
-        font-weight: lighter;
         line-height: 25px;
         font-size: 1.1em;
     }
@@ -292,7 +292,6 @@ Media query for screen size GREATER THAN 600px
         margin: 1vw 2vw 2vw 2vw;
         padding: 1vw;
         border: solid black 0.2vw;
-        font-weight: lighter;
         text-align: center;
     }
     #education-section span {
@@ -319,17 +318,14 @@ Media query for screen size GREATER THAN 600px
     #work-section #first-work h3 {
         margin: 0vw 4vw 0vw 4vw;
         font-size: 1em;
-        font-weight: lighter;
     }
     #work-section #first-work h4 {
         margin: 0vw 4vw 2vw 4vw;
         font-size: 0.9em;
-        font-weight: lighter;
         font-style: italic;
     }
     #work-section #first-work p {
         margin: 2vw 4vw 2vw 4vw;
-        font-weight: lighter;
         line-height: 25px;
         font-size: 1.1em;
     }
@@ -361,7 +357,6 @@ Media query for screen size GREATER THAN 600px
     }
     #tech-section p {
         margin: 2vw 4vw 2vw 4vw;
-        font-weight: lighter;
         text-align: center;
         font-size: 1.1em;
     }
@@ -374,12 +369,17 @@ Media query for screen size GREATER THAN 600px
         text-align: center;
         font-weight: normal;
     }
-    #contact-section p {
-        margin: 2vw 5vw 2vw 5vw;
-        border: solid black 0.2vw;
+    #contact-section #contact-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    #contact-section #contact-list>* {
+        margin: 2vw;
         padding: 2vw;
+        border: solid black 0.2vw;
         text-align: center;
-        font-weight: lighter;
         font-size: 1.1em;
     }
 }
@@ -390,6 +390,9 @@ Media query for screen size GREATER THAN 1200px
 */
 
 @media all and (min-width: 1200px) {
+    #opening-section {
+        margin: 2vh 10vw 3vh 10vw;
+    }
     #profile-section,
     #education-section,
     #work-section,

@@ -1,3 +1,6 @@
 dispatch:
 - url: "arunam.dev/*"
   service: default
+
+- url: "encryption.arunam.dev/*"
+  service: encryption
