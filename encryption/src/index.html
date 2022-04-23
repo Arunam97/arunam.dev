@@ -13,31 +13,41 @@
 
 <body id="body" onload="change_state_encrypt_decrypt()">
 
-    <div id="step-1">
-        <p>Step 1 : Choose what you want to do</p>
-        <input type="radio" id="encrypt-radio" name="encrypt-decrypt-radio" onchange="change_state_encrypt_decrypt()" value="Encrypt" checked="checked">
-        <label for="encrypt-radio">Encrypt</label>
-        <input type="radio" id="decrypt-radio" name="encrypt-decrypt-radio" onchange="change_state_encrypt_decrypt()" value="Decrypt">
-        <label for="decrypt-radio">Decrypt</label>
+    <div id="step-1" class="general-layout">
+        <p><span>Step 1 :</span> Choose what you want to do</p>
+        <div>
+            <input type="radio" id="encrypt-radio" name="encrypt-decrypt-radio" onchange="change_state_encrypt_decrypt()" value="Encrypt" checked="checked">
+            <span class="radio-buttons-span"></span>
+            <label for="encrypt-radio">Encrypt</label>
+        </div>
+        <div>
+            <input type="radio" id="decrypt-radio" name="encrypt-decrypt-radio" onchange="change_state_encrypt_decrypt()" value="Decrypt">
+            <span class="radio-buttons-span"></span>
+            <label for="decrypt-radio">Decrypt</label>
+        </div>
     </div>
 
-    <div id="step-2">
-        <p>Step 2 : Pick a cryptographic method</p>
+    <div id="step-2" class="general-layout">
+        <p><span>Step 2 :</span> Pick a cryptographic method</p>
         <select id="method">
           <option value="Shift Cipher">Shift Cipher</option>
         </select>
     </div>
 
-    <div id="step-3">
-        <p>Step 3 : Enter the text and key</p>
-        <label for="first-input-box">Text</label>
-        <input type="text" id="first-input-box">
-        <label for="second-input-box">Key</label>
-        <input type="text" id="second-input-box">
+    <div id="step-3" class="general-layout">
+        <p><span>Step 3 :</span> Enter the text and key</p>
+        <div>
+            <label for="first-input-box">Text</label>
+            <input type="text" id="first-input-box">
+        </div>
+        <div>
+            <label for="second-input-box">Key</label>
+            <input type="text" id="second-input-box">
+        </div>
         <button type="button" onclick="run()" id="step-3-button">Encrypt</button>
     </div>
 
-    <div id="step-4">
+    <div id="step-4" class="general-layout">
         <p id="output"></p>
     </div>
 

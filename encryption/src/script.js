@@ -13,10 +13,10 @@ function getRadioValue(radio_name) {
 function change_state_encrypt_decrypt() {
     var step1_radio = getRadioValue('encrypt-decrypt-radio')
     if (step1_radio === "Encrypt") {
-        document.getElementById('body').style.background = "lightblue";
+        document.getElementById('body').style.background = "rgb(240, 128, 128, 0.8)";
         document.getElementById('step-3-button').innerText = "Encrypt";
     } else if (step1_radio === "Decrypt") {
-        document.getElementById('body').style.background = "lightgreen";
+        document.getElementById('body').style.background = "rgb(144, 238, 144, 0.8)";
         document.getElementById('step-3-button').innerText = "Decrypt";
     } else {
         console.log("Something has gone wrong in change_background_encrypt_decrypt()")
@@ -33,20 +33,26 @@ function run() {
     var second_input = document.getElementById("second-input-box").value;
     var output = "";
 
-    if (step1_radio === "Encrypt") {
-        if (step2_select === "Shift Cipher") {
-            output = shift_cipher_encode(first_input, second_input);
-        } else {
-            console.log("Something has gone wrong in run() encrypt")
-        }
-    } else if (step1_radio === "Decrypt") {
-        if (step2_select === "Shift Cipher") {
-            output = shift_cipher_decode(first_input, second_input);
-        } else {
-            console.log("Something has gone wrong in run() decrypt")
+    if (first_input === "" || second_input === "") {
+        document.getElementById("output").innerText = "You must enter both fields"
+    } else {
+        if (step1_radio === "Encrypt") {
+            if (step2_select === "Shift Cipher") {
+                output = shift_cipher_encode(first_input, second_input);
+                document.getElementById("output").innerText = "Ciphertext : " + output;
+            } else {
+                console.log("Something has gone wrong in run() encrypt")
+            }
+        } else if (step1_radio === "Decrypt") {
+            if (step2_select === "Shift Cipher") {
+                output = shift_cipher_decode(first_input, second_input);
+                document.getElementById("output").innerText = "Plaintext : " + output;
+            } else {
+                console.log("Something has gone wrong in run() decrypt")
+            }
         }
     }
-    document.getElementById("output").innerText = output;
+    document.getElementById("step-4").style = "visibility: visible;"
 }
 
 /*
