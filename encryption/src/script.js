@@ -25,7 +25,7 @@ function change_state_encrypt_decrypt() {
 
 // Step 3 Functions
 
-function run() {
+function driver() {
     var step1_radio = getRadioValue('encrypt-decrypt-radio')
     var step2_select = document.getElementById('method').value
 
@@ -36,20 +36,23 @@ function run() {
     if (first_input === "" || second_input === "") {
         document.getElementById("output").innerText = "You must enter both fields"
     } else {
-        if (step1_radio === "Encrypt") {
-            if (step2_select === "Shift Cipher") {
-                output = shift_cipher_encode(first_input, second_input);
-                document.getElementById("output").innerText = "Ciphertext : " + output;
-            } else {
-                console.log("Something has gone wrong in run() encrypt")
-            }
-        } else if (step1_radio === "Decrypt") {
-            if (step2_select === "Shift Cipher") {
-                output = shift_cipher_decode(first_input, second_input);
-                document.getElementById("output").innerText = "Plaintext : " + output;
-            } else {
-                console.log("Something has gone wrong in run() decrypt")
-            }
+        switch (step1_radio) {
+            case "Encrypt":
+                switch (step2_select) {
+                    case "Shift Cipher":
+                        output = shift_cipher_encode(first_input, second_input);
+                        document.getElementById("output").innerText = "Ciphertext : " + output;
+                        break;
+                }
+                break;
+            case "Decrypt":
+                switch (step2_select) {
+                    case "Shift Cipher":
+                        output = shift_cipher_decode(first_input, second_input);
+                        document.getElementById("output").innerText = "Plaintext : " + output;
+                        break;
+                }
+                break;
         }
     }
     document.getElementById("step-4").style = "visibility: visible;"

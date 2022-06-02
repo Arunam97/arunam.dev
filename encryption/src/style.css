@@ -55,15 +55,25 @@ Media query for screen size LESS THAN 600px
         justify-content: center;
         align-items: center;
     }
-    #step-3 input {
-        border: solid black 0.3vw;
+    #step-3 #step-3-inputs {
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: 10vw 40vw;
+    }
+    #step-3 #step-3-inputs label {
+        margin: 0 2vw 2vw 0;
         text-align: center;
-        width: 50vw;
+    }
+    #step-3 #step-3-inputs input {
+        border: solid black 0.3vw;
+        margin-bottom: 2vw;
+        text-align: center;
     }
     #step-3 button {
         border: solid black 0.3vw;
         text-align: center;
         width: 30vw;
+        height: 10vw;
     }
     #step-4 {
         visibility: hidden;
@@ -111,15 +121,25 @@ Media query for screen size LESS THAN 600px
         justify-content: center;
         align-items: center;
     }
-    #step-3 input {
-        border: solid black 0.2vw;
+    #step-3 #step-3-inputs {
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: 10vw 40vw;
+    }
+    #step-3 #step-3-inputs label {
+        margin: 0 1vw 1vw 0;
         text-align: center;
-        width: 25vw;
+    }
+    #step-3 #step-3-inputs input {
+        border: solid black 0.2vw;
+        margin-bottom: 1vw;
+        text-align: center;
     }
     #step-3 button {
         border: solid black 0.2vw;
         text-align: center;
-        width: 30vw;
+        width: 20vw;
+        height: 5vw;
     }
     #step-4 {
         visibility: hidden;
@@ -127,7 +147,7 @@ Media query for screen size LESS THAN 600px
     }
 }
 
-@media all and (min-width: 600px) {
+@media all and (min-width: 1200px) {
     * {
         font-size: 1.5vw;
     }
