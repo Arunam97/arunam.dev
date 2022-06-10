@@ -1,61 +1,81 @@
 // Helper Functions
-
+// Maybe better to move functions around so that driver calls individual encryption functions methods rather than other way around.
 function getRadioValue(radio_name) {
-    var radio_element = document.getElementsByName(radio_name);
-    for (i = 0; i < radio_element.length; i++) {
+    let radio_element = document.getElementsByName(radio_name);
+    for (let i = 0; i < radio_element.length; i++) {
         if (radio_element[i].checked)
             return radio_element[i].value;
     }
 }
 
-// Step 1 Functions
+function reset() {
+    document.getElementById("first-input-box").value = "";
+    document.getElementById("second-input-box").value = "";
+    document.getElementById("output").innerText = "";
+    document.getElementById("step-4").style = "visibility: hidden;"
+}
 
 function change_state_encrypt_decrypt() {
-    var step1_radio = getRadioValue('encrypt-decrypt-radio')
-    if (step1_radio === "Encrypt") {
-        document.getElementById('body').style.background = "rgb(240, 128, 128, 0.8)";
+    let step2_radio = getRadioValue('encrypt-decrypt-radio')
+    if (step2_radio === "Encrypt") {
         document.getElementById('step-3-button').innerText = "Encrypt";
-    } else if (step1_radio === "Decrypt") {
-        document.getElementById('body').style.background = "rgb(144, 238, 144, 0.8)";
+        reset();
+    } else if (step2_radio === "Decrypt") {
         document.getElementById('step-3-button').innerText = "Decrypt";
+        reset();
     } else {
         console.log("Something has gone wrong in change_background_encrypt_decrypt()")
     }
 }
 
-// Step 3 Functions
-
 function driver() {
-    var step1_radio = getRadioValue('encrypt-decrypt-radio')
-    var step2_select = document.getElementById('method').value
+    let step2_radio = getRadioValue('encrypt-decrypt-radio')
+    let step1_select = document.getElementById('method').value
 
-    var first_input = document.getElementById("first-input-box").value;
-    var second_input = document.getElementById("second-input-box").value;
-    var output = "";
+    let first_input = document.getElementById("first-input-box").value;
+    let second_input = document.getElementById("second-input-box").value;
+    let output = "";
 
     if (first_input === "" || second_input === "") {
         document.getElementById("output").innerText = "You must enter both fields"
     } else {
-        switch (step1_radio) {
+        switch (step2_radio) {
             case "Encrypt":
-                switch (step2_select) {
+                switch (step1_select) {
                     case "Shift Cipher":
                         output = shift_cipher_encode(first_input, second_input);
-                        document.getElementById("output").innerText = "Ciphertext : " + output;
+                        document.getElementById("output").innerText = "Ciphertext is " + output;
                         break;
                 }
                 break;
             case "Decrypt":
-                switch (step2_select) {
+                switch (step1_select) {
                     case "Shift Cipher":
                         output = shift_cipher_decode(first_input, second_input);
-                        document.getElementById("output").innerText = "Plaintext : " + output;
+                        document.getElementById("output").innerText = "Plaintext is " + output;
                         break;
                 }
                 break;
         }
     }
     document.getElementById("step-4").style = "visibility: visible;"
+}
+
+
+// CIPHER FUNCTIONS
+
+
+// Shifts the 'character' between ASCII 32 and 126 (both included)
+// Input : 'character' -> Character ; 'count' -> Integer
+// Return type : Character
+function shift(character, count) {
+    character = character.toString();
+    count = parseInt(count);
+    let charASCII = character.charCodeAt();
+    if (count < 0) {
+        count = (count % (127 - 32)) + 127 - 32;
+    }
+    return String.fromCharCode((charASCII + count - 32) % (127 - 32) + 32);
 }
 
 /*
@@ -65,19 +85,6 @@ If string is "ABCD" and the key is 2 the cipher text becomes "CDEF".
 Also known as Caesars cipher because Julius Caesar used it with key 3.
 */
 
-// Shifts the 'character' between ASCII 32 and 126 (both included)
-// Input : 'character' -> Character ; 'count' -> Integer
-// Return type : Character
-function shift(character, count) {
-    character = character.toString();
-    count = parseInt(count);
-    var charASCII = character.charCodeAt();
-    if (count < 0) {
-        count = (count % (127 - 32)) + 127 - 32;
-    }
-    return String.fromCharCode((charASCII + count - 32) % (127 - 32) + 32);
-}
-
 // Shift Cipher Encryption
 // Encodes a 'plaintext' to ciphertext with a given 'key' using a Shift Cipher (Also known as Caesar's Cipher if the key is 3)
 // Input : 'plaintext' -> String ; 'key' -> Integer
@@ -85,7 +92,7 @@ function shift(character, count) {
 function shift_cipher_encode(plaintext, key) {
     plaintext = plaintext.toString();
     key = parseInt(key);
-    var ciphertext = "";
+    let ciphertext = "";
     for (let character of plaintext) {
         ciphertext = ciphertext + shift(character, key)
     }
@@ -99,7 +106,7 @@ function shift_cipher_encode(plaintext, key) {
 function shift_cipher_decode(ciphertext, key) {
     ciphertext = ciphertext.toString();
     key = parseInt(key);
-    var plaintext = "";
+    let plaintext = "";
     for (let character of ciphertext) {
         plaintext = plaintext + shift(character, -key)
     }

@@ -9,45 +9,49 @@
     <link rel="icon" href="/src/icon.jpg">
     <link rel="stylesheet" type="text/css" href="/src/style.css">
     <script src="/src/script.js" type="text/javascript"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
 </head>
 
-<body id="body" onload="change_state_encrypt_decrypt()">
+<body id="body" onload="change_state_encrypt_decrypt(), reset()">
 
-    <div id="step-1" class="general-layout">
-        <p><span>Step 1 : </span>Choose what you want to do</p>
-        <div>
-            <input type="radio" id="encrypt-radio" name="encrypt-decrypt-radio" onchange="change_state_encrypt_decrypt()" value="Encrypt" checked="checked">
-            <span class="radio-buttons-span"></span>
-            <label for="encrypt-radio">Encrypt</label>
-        </div>
-        <div>
-            <input type="radio" id="decrypt-radio" name="encrypt-decrypt-radio" onchange="change_state_encrypt_decrypt()" value="Decrypt">
-            <span class="radio-buttons-span"></span>
-            <label for="decrypt-radio">Decrypt</label>
-        </div>
-    </div>
-
-    <div id="step-2" class="general-layout">
-        <p><span>Step 2 : </span>Pick a cryptographic method</p>
+    <section id="step-1">
+        <p>Step 1 : Pick a cryptographic method</p>
         <select id="method">
           <option value="Shift Cipher">Shift Cipher</option>
         </select>
-    </div>
+    </section>
 
-    <div id="step-3" class="general-layout">
-        <p><span>Step 3 : </span>Enter the text and key</p>
-        <div id="step-3-inputs">
-            <label for="first-input-box" id="first-label">Text</label>
-            <input type="text" id="first-input-box">
-            <label for="second-input-box" id="second label">Key</label>
-            <input type="text" id="second-input-box">
+    <section id="step-2">
+        <p>Step 2 : Choose what you want to do</p>
+        <div>
+            <input type="radio" id="encrypt-radio" value="Encrypt" name="encrypt-decrypt-radio" onchange="change_state_encrypt_decrypt()">
+            <label for="encrypt-radio">Encrypt</label>
         </div>
-        <button type="button" onclick="driver()" id="step-3-button">Encrypt</button>
-    </div>
+        <div>
+            <input type="radio" id="decrypt-radio" value="Decrypt" name="encrypt-decrypt-radio" onchange="change_state_encrypt_decrypt()">
+            <label for="decrypt-radio">Decrypt</label>
+        </div>
+    </section>
 
-    <div id="step-4" class="general-layout">
+    <section id="step-3">
+        <p>Step 3 : Enter the text and key</p>
+        <div id="step-3-processing-box">
+            <div id="step-3-inputs">
+                <label for="first-input-box">Text</label>
+                <input type="text" id="first-input-box">
+                <label for="second-input-box">Key</label>
+                <input type="text" id="second-input-box">
+            </div>
+            <button type="button" onclick="driver()" id="step-3-button">Encrypt</button>
+        </div>
+    </section>
+
+    <section id="step-4">
         <p id="output"></p>
-    </div>
+    </section>
 
 </body>
 
