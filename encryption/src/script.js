@@ -1,5 +1,3 @@
-// Helper Functions
-// Maybe better to move functions around so that driver calls individual encryption functions methods rather than other way around.
 function getRadioValue(radio_name) {
     let radio_element = document.getElementsByName(radio_name);
     for (let i = 0; i < radio_element.length; i++) {
@@ -63,7 +61,6 @@ function driver() {
 
 
 // CIPHER FUNCTIONS
-
 
 // Shifts the 'character' between ASCII 32 and 126 (both included)
 // Input : 'character' -> Character ; 'count' -> Integer

@@ -89,6 +89,11 @@ Media query for screen size LESS THAN 600px
         margin-bottom: 2vw;
         line-height: 150%;
     }
+    #resume {
+        margin: 1vw 4vw 4vw 4vw;
+        font-size: 1.2em;
+        text-align: center;
+    }
     #projects {
         border: solid black 1vw;
         border-style: double;
@@ -189,7 +194,7 @@ Media query for screen size GREATER THAN 600px
     }
     #about-me-text-container {
         margin: 1vw;
-        border: solid black 0.75vw;
+        border: solid black 0.5vw;
         border-style: double;
     }
     #about-me-text-container>h1 {
@@ -208,20 +213,24 @@ Media query for screen size GREATER THAN 600px
         margin: 1vw;
         font-size: 1.2em;
     }
-    #education,
-    #tech-skills {
+    #education {
         margin-bottom: 2vw;
     }
     #education>p {
         text-align: center;
         line-height: 150%;
     }
-    #tech-skills>ul {
-        margin-bottom: 2vw;
+    #tech-skills {
+        margin-bottom: 0vw;
     }
     #tech-skills>ul>li {
         margin: 1vw 3vw 1vw 3vw;
         line-height: 150%;
+    }
+    #resume {
+        margin: 1vw 3vw 3vw 3vw;
+        font-size: 1.2em;
+        text-align: center;
     }
     #about-me-img-container {
         display: flex;
@@ -236,7 +245,7 @@ Media query for screen size GREATER THAN 600px
         margin: 2vw;
     }
     #projects {
-        border: solid black 0.75vw;
+        border: solid black 0.5vw;
         margin: 2vw 2vw 4vw 2vw;
         border-style: double;
     }
@@ -249,8 +258,8 @@ Media query for screen size GREATER THAN 600px
         justify-content: center;
     }
     .individual-project {
-        border: solid black 0.3vw;
-        margin: 2vw;
+        border: solid black 0.2vw;
+        margin: 2vw 2vw 4vw 2vw;
     }
     .individual-project>h2 {
         margin: 1vw 2vw 1vw 2vw;
@@ -266,15 +275,15 @@ Media query for screen size GREATER THAN 600px
     }
     #work {
         margin: 4vw 2vw 4vw 2vw;
-        border: solid black 0.75vw;
+        border: solid black 0.5vw;
         border-style: double;
     }
-    #work h1 {
+    #work>h1 {
         margin: 2vw;
     }
     .individual-work {
-        margin: 2vw 5vw 2vw 5vw;
-        border: solid black 0.3vw;
+        margin: 2vw 10vw 4vw 10vw;
+        border: solid black 0.2vw;
     }
     .individual-work .work-title {
         margin: 2vw 4vw 0vw 4vw;
@@ -296,7 +305,7 @@ Media query for screen size GREATER THAN 600px
     }
     #contact-me {
         margin: 4vw 2vw 4vw 2vw;
-        border: solid black 0.75vw;
+        border: solid black 0.5vw;
         border-style: double;
     }
     #contact-me>h1 {
@@ -310,9 +319,9 @@ Media query for screen size GREATER THAN 600px
         justify-content: center;
     }
     #contact-links>* {
-        margin: 1vw 2vw 1.5vw 2vw;
+        margin: 1vw 2vw 4vw 2vw;
         padding: 2vw;
-        border: solid black 0.3vw;
+        border: solid black 0.2vw;
         text-align: center;
     }
 }
